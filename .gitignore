@@ -5,6 +5,8 @@
 
 !.gitignore
 
+!.nojekyll
+
 
 !public
 !public/index.html
