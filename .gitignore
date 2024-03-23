@@ -1,0 +1,12 @@
+*
+
+!.gitignore
+
+
+!public
+!public/index.html
+!public/assets
+!public/assets/**
+
+!LICENSE
+!README.md
