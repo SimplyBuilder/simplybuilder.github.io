@@ -2,11 +2,13 @@
 name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
+#  push:
+#    branches: [$default-branch]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    branches: [$default-branch]
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -18,23 +20,48 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build:
+    if: github.repository == 'SimplyBuilder/simplybuilder.github.io'
+    strategy:
+      matrix:
+        node: [ "20.10.x" ]
+        runs-on: [ubuntu-latest]
+    runs-on: ${{ matrix.runs-on }}
+    #    defaults:
+    #      run:
+    #        working-directory: ./institutional-website-v1
+    steps:
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9.1.0
+          run_install: false
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install dependencies
+        run: |
+          cd institutional-website-v1
+          pnpm install
+          pnpm run build
+          cd dist
+          tar -cvf ../artifact.tar *
+      - uses: actions/upload-artifact@v4
+        name: Upload dist
+        with:
+          name: github-pages
+          path: institutional-website-v1/artifact.tar
+
   # Single deploy job since we're just deploying
   deploy:
-    if: github.repository == 'SimplyBuilder/simplybuilder.github.io'
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
