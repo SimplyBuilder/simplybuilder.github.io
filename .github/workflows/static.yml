@@ -27,14 +27,11 @@ jobs:
         node: [ "20.10.x" ]
         runs-on: [ubuntu-latest]
     runs-on: ${{ matrix.runs-on }}
-    #    defaults:
-    #      run:
-    #        working-directory: ./institutional-website-v1
     steps:
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9.1.0
+          version: 9.7.0
           run_install: false
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node }}
@@ -43,7 +40,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - name: Install dependencies
         run: |
-          cd institutional-website-v1
+          cd institutional-website-v2
           pnpm install
           pnpm run build
           cd dist
@@ -52,7 +49,7 @@ jobs:
         name: Upload dist
         with:
           name: github-pages
-          path: institutional-website-v1/artifact.tar
+          path: institutional-website-v2/artifact.tar
 
   # Single deploy job since we're just deploying
   deploy:
