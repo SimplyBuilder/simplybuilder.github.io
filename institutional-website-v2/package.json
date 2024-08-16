@@ -71,6 +71,7 @@
   "devDependencies": {
     "@jamilservices/sb-core-module": "latest",
     "@jamilservices/sb-module-notify": "latest",
+    "@jamilservices/sb-module-router": "latest",
     "autoprefixer": "latest",
     "postcss": "latest",
     "postcss-nested": "latest",
