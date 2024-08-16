@@ -8,7 +8,9 @@
 !AUTHORS
 !MAINTAINERS.md
 !institutional-website-v1
+!institutional-website-v2
 !institutional-website-v1/.gitignore
+!institutional-website-v2/.gitignore
 
 **/*~
 **/*.log
