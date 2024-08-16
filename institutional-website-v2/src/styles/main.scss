@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  inline-size: 100%;
+  block-size: 100%;
+}
+* {
+  &, &:before, &:after {
+    box-sizing: border-box !important;
+  }
+}
+body {
+  @apply box-border flex flex-col flex-nowrap grow min-w-96 font-serif antialiased text-base p-0 m-0 bg-stone-50 text-lime-950 dark:bg-stone-800 dark:text-white
+}
+
+/*[data-state="menu-toggle"] {
+  //@apply hidden
+  & {
+    &:checked ~ .docs-menu {
+      display: none;
+    }
+  }
+}*/
+input[data-state="docs-menu-toggle"] {
+  appearance: none;
+  & ~ .docs-items-menu,
+  & + label span {
+    display: none;
+  }
+  &:checked ~ .docs-items-menu,
+  &:checked + label span{
+    display: inline-flex;
+  }
+}
+
+:is(aside.docs-aside) {
+  & {
+    display: inline-flex;
+    position: absolute;
+    z-index: 2;
+    min-inline-size: fit-content;
+    min-block-size: 100%;
+    flex-direction: column;
+  }
+
+  &:has(input[data-state="docs-menu-toggle"]:checked) {
+    inline-size: 100%;
+  }
+}
