@@ -1,0 +1,83 @@
+{
+  "name": "institutional-website-v2",
+  "version": "0.2.0",
+  "description": "SimplyBuilder - Official Site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "homepage": "https://simplybuilder.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimplyBuilder/simplybuilder.github.io.git"
+  },
+  "author": "Jamil Serviços <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/jamilservicos"
+    },
+    {
+      "type": "patreon",
+      "url": "https://patreon.com/jamilservices"
+    },
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/support-jamilservices"
+    },
+    {
+      "type": "Buy me a coffee",
+      "url": "https://buymeacoffee.com/jamilservices"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.10.x"
+  },
+  "os": [
+    "!win32"
+  ],
+  "keywords": [
+    "jamilservicos",
+    "jamilservices",
+    "node",
+    "nodejs",
+    "node.js",
+    "javascript",
+    "framework",
+    "official",
+    "site",
+    "simply-builder",
+    "simplybuilder",
+    "simply",
+    "builder",
+    "module",
+    "router",
+    "routers",
+    "spa",
+    "single",
+    "page",
+    "application",
+    "front",
+    "frontend",
+    "front-end",
+    "tailwindcss",
+    "tailwind",
+    "sb-core-module"
+  ],
+  "devDependencies": {
+    "@jamilservices/sb-core-module": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "postcss-nested": "latest",
+    "postcss-import": "latest",
+    "sass": "latest",
+    "vite": "latest",
+    "terser": "latest",
+    "tailwindcss": "latest"
+  },
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf"
+}
