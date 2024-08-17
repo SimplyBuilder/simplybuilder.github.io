@@ -76,6 +76,7 @@ const itemStruct = () => {
                     makeItemDocMenu({key: "docs-get-start-menu", anchor: "#/docs/get-start"}),
                     makeItemDocMenu({key: "docs-core-concepts-menu", anchor: "#/docs/core-concepts"}),
                     makeItemDocMenu({key: "docs-how-use-menu", anchor: "#/docs/how-use"}),
+                    makeItemDocMenu({key: "docs-chatgpt-menu", anchor: "#/docs/chatgpt"}),
                 ]
             }
         ]

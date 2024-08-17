@@ -4,11 +4,13 @@ import {sidebarStruct} from "@components/render/sections/docs/sidebar.js";
 import {docsGetStartStruct} from "@components/render/sections/docs/get-start.js";
 import {docsCoreConceptStruct} from "@components/render/sections/docs/core-concepts.js";
 import {docsHowUseStruct} from "@components/render/sections/docs/how-use.js";
+import {docsChatGPTStruct} from "@components/render/sections/docs/chatgpt.js";
 
 const docSection = {
     "get-start": docsGetStartStruct,
     "core-concepts": docsCoreConceptStruct,
-    "how-use": docsHowUseStruct
+    "how-use": docsHowUseStruct,
+    "chatgpt": docsChatGPTStruct
 };
 
 const docsViewStruct = (section) => {

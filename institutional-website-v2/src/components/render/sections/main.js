@@ -11,6 +11,7 @@ const pageSections = {
     "docs/get-start": () =>  viewMainStruct(docStruct("get-start")),
     "docs/core-concepts": () =>  viewMainStruct(docStruct("core-concepts")),
     "docs/how-use": () =>  viewMainStruct(docStruct("how-use")),
+    "docs/chatgpt": () =>  viewMainStruct(docStruct("chatgpt")),
     '404': () =>  viewMainStruct([error404Struct])
 };
 
