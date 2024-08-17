@@ -21,6 +21,10 @@ routers.register({
     id: "docs/how-use",
     title: "SimplyBuilder - "+ language.get("docs-how-use-menu")
 });
+routers.register({
+    id: "docs/chatgpt",
+    title: "SimplyBuilder - "+ language.get("docs-chatgpt-menu")
+});
 
 routers.register({
     id: "docs",
