@@ -5,6 +5,7 @@ const strings = {
     "docs-get-start-menu": "Começar",
     "docs-core-concepts-menu": "conceitos básicos",
     "docs-how-use-menu": "Como Usar",
+    "docs-chatgpt-menu": "ChatGPT",
 
     "docs-section-use-pnpm": "Usando pnpm:",
     "docs-section-use-npm": "Usando npm:",
@@ -68,6 +69,18 @@ const strings = {
     "docs-how-use-get-element-text": "Após a renderização, você pode recuperar uma referência a um elemento usando o valor do dataset.state associado:",
     "docs-how-use-remove-element": "Removendo Elementos",
     "docs-how-use-remove-element-text": "Se você precisar remover um elemento e todos os seus ouvintes de eventos associados, incluindo seus filhos, use:",
+
+    "docs-chatgpt-header": "Crie Objetos SimplyBuilder com o ChatGPT através de prompts",
+    "docs-chatgpt-text": "Utilize o ChatGPT para gerar estruturas SimplyBuilder de maneira eficiente e fácil.",
+    "docs-chatpgt-example-header": "Exemplo de treinamento inicial para ChatGPT:",
+
+    "docs-chatgpt-example-text": "Vou lhe fornecer uma breve visão geral do objeto estrutural SimplyBuilder, um framework para criar UIs. Quero que você me forneça estruturas SimplyBuilder de acordo com minha solicitação, sempre usando o SimplyBuilder Object.",
+    "docs-chatgpt-example-intro": "Exemplo:",
+    "docs-chatgpt-example-request-header": "Solicitação:",
+    "docs-chatgpt-example-request-text": "Como posso criar um botão simples usando o SimplyBuilder?",
+    "docs-chatgpt-example-response-header": "Resposta:",
+    "docs-chatgpt-conclusion": "Agora me responda o que compreendeu sobre o Object SimplyBuilder, e se esta pronto para criar estruturas SimplyBuilder.",
+    "docs-chatgpt-example-conclusion": "Verifique a resposta do chatGPT e confirme se ele entendeu corretamente as instruções, então apenas solicite elementos, por exemplo: 'crie um \"footer\" para mim, usando simplybuilder e use classes tailmindcss para estilização'."
 
 };
 

@@ -5,6 +5,7 @@ const strings = {
     "docs-get-start-menu": "Get Started",
     "docs-core-concepts-menu": "core concepts",
     "docs-how-use-menu": "How use",
+    "docs-chatgpt-menu": "ChatGPT",
 
     "docs-section-use-pnpm": "Using pnpm:",
     "docs-section-use-npm": "Using npm:",
@@ -68,7 +69,20 @@ const strings = {
     "docs-how-use-get-element": "Retrieving References",
     "docs-how-use-get-element-text": "After rendering, you can retrieve a reference to an element using the dataset.state value associated with it:",
     "docs-how-use-remove-element": "Removing Elements",
-    "docs-how-use-remove-element-text": "If you need to remove an element and all its associated event listeners, including its children, use:"
+    "docs-how-use-remove-element-text": "If you need to remove an element and all its associated event listeners, including its children, use:",
+
+    "docs-chatgpt-header": "Create SimplyBuilder Objects with ChatGPT using prompts",
+    "docs-chatgpt-text": "Use ChatGPT to efficiently and easily generate SimplyBuilder structures.",
+    "docs-chatpgt-example-header": "Initial training example for ChatGPT:",
+
+    "docs-chatgpt-example-text": "I will provide you with a brief overview of the structural object SimplyBuilder, a framework for creating UIs. I want you to provide me with SimplyBuilder structures according to my request, always using the SimplyBuilder Object.",
+    "docs-chatgpt-example-intro": "Example:",
+    "docs-chatgpt-example-request-header": "Request:",
+    "docs-chatgpt-example-request-text": "How can I create a simple button using SimplyBuilder?",
+    "docs-chatgpt-example-response-header": "Response:",
+    "docs-chatgpt-conclusion": "Now tell me what you understood about the SimplyBuilder Object, and if you are ready to create SimplyBuilder structures.",
+    "docs-chatgpt-example-conclusion": "Check the chatGPT response and confirm that it correctly understood the instruction, then just request elements, example: 'create a \"footer\" for me, using simplybuilder and use tailmindcss classes for styling'."
+
 };
 
 export default Object.freeze(strings)
