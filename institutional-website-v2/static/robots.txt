@@ -1,2 +1,3 @@
 User-Agent: *
+sitemap: https://simplybuilder.jamilservices.com/sitemap.xml
 Disallow: /assets/
