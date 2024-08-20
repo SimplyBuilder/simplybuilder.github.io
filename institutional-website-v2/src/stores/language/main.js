@@ -24,18 +24,18 @@ const getLanguage = () => {
     return store.language;
 };
 
-const start = () => {
-    if(window.document.documentElement.lang !== store.language) window.document.documentElement.lang = store.language;
-};
-
 const setLanguage = (key) => {
     if(key && types[key]) {
         store.language = key.toString();
-        start();
+        if(window.document.documentElement.lang !== store.language) window.document.documentElement.lang = store.language;
         routerWacth.emit({
             event: "lang-update"
         });
     }
+};
+
+const start = () => {
+    if(window.document.documentElement.lang !== store.language) setLanguage(window.document.documentElement.lang);
 };
 
 export const language = Object.freeze({

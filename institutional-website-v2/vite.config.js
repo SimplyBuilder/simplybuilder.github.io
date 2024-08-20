@@ -8,7 +8,7 @@ import postcssPlugins from "./postcss.config.js"
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-    base: './',
+    base: '/',
     root: './src',
     build: {
         manifest: false,
@@ -17,6 +17,13 @@ export default defineConfig({
         target: "esnext",
         terserOptions: {
             mangle: false,
+        },
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'src', 'index.html'),
+                'pt': resolve(__dirname, 'src', 'pt', 'index.html'),
+                'en': resolve(__dirname, 'src', 'en', 'index.html')
+            }
         }
     },
     optimizeDeps: {
