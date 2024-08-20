@@ -29,7 +29,8 @@ const struct = () => {
                                 attr: {
                                     class: "text-rose-600 dark:text-rose-400 hover:underline font-mono font-semibold tracking-wider",
                                     href: "https://github.com/jamilservices",
-                                    target: "_blank"
+                                    target: "_blank",
+                                    rel: "noopener"
                                 },
                                 text: "JamilServices"
                             }
@@ -48,7 +49,8 @@ const struct = () => {
                         attr: {
                             class: "text-rose-600 dark:text-rose-400 hover:underline font-mono font-semibold tracking-wider",
                             href: "https://github.com/orgs/SimplyBuilder/repositories",
-                            target: "_blank"
+                            target: "_blank",
+                            rel: "noopener"
                         },
                         text: "GitHub:SimplyBuilder",
                     }

@@ -16,7 +16,7 @@ const logoContainerStruct = {
 
 const heroStruct = () => {
     return {
-        element: "h2",
+        element: "h1",
         attr: {
             class: "font-sans xl:text-xl md:text-md sm:text-sm w-3/5 text-center justify-center"
         },
