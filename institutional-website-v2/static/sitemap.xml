@@ -1,8 +1,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
     <url>
-        <loc>https://simplybuilder.jamilservices.com/</loc>
-        <lastmod>2024-08-20T07:02:55+00:00</lastmod>
+        <loc>https://simplybuilder.jamilservices.com</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/en</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/pt</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/#!/home</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/#!/docs/get-start</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/#!/docs/core-concepts</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/#!/docs/how-use</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/#!/docs/chatgpt</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/template-sb-github-pages</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://simplybuilder.jamilservices.com/template-sb-router-github-pages</loc>
+        <lastmod>2024-08-22T03:12:13+00:00</lastmod>
         <priority>1.00</priority>
     </url>
 </urlset>
