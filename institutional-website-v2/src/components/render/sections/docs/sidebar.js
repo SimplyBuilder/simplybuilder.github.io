@@ -73,10 +73,10 @@ const itemStruct = () => {
                 element: "ul",
                 attr: { class: "flex flex-wrap flex-col gap-2 list-none" },
                 children: [
-                    makeItemDocMenu({key: "docs-get-start-menu", anchor: "#/docs/get-start"}),
-                    makeItemDocMenu({key: "docs-core-concepts-menu", anchor: "#/docs/core-concepts"}),
-                    makeItemDocMenu({key: "docs-how-use-menu", anchor: "#/docs/how-use"}),
-                    makeItemDocMenu({key: "docs-chatgpt-menu", anchor: "#/docs/chatgpt"}),
+                    makeItemDocMenu({key: "docs-get-start-menu", anchor: "./#!/docs/get-start"}),
+                    makeItemDocMenu({key: "docs-core-concepts-menu", anchor: "./#!/docs/core-concepts"}),
+                    makeItemDocMenu({key: "docs-how-use-menu", anchor: "./#!/docs/how-use"}),
+                    makeItemDocMenu({key: "docs-chatgpt-menu", anchor: "./#!/docs/chatgpt"}),
                 ]
             }
         ]

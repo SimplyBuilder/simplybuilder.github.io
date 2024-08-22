@@ -73,7 +73,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
+        gtag('event', 'page_view',{'page_path': location.pathname + location.hash});
         gtag('config', 'G-Z6LN08095G');
     </script>
 </head>

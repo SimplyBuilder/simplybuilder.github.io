@@ -171,7 +171,7 @@ const struct = () => {
                         element: "a",
                         attr: {
                             class: "hover:bg-blue-700 hover:text-white px-3 py-2 rounded",
-                            href: "#home",
+                            href: "./#!/home",
                             title: language.get("canvas-menu-home")
                         },
                         text: language.get("canvas-menu-home")
@@ -180,7 +180,7 @@ const struct = () => {
                         element: "a",
                         attr: {
                             class: "hover:bg-blue-700 hover:text-white px-3 py-2 rounded",
-                            href: "#docs",
+                            href: "./#!/docs",
                             title: language.get("canvas-menu-docs")
                         },
                         text: language.get("canvas-menu-docs")
