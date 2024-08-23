@@ -7,12 +7,16 @@ import "@components/render/main.js";
 import "@stores/pageStore.js";
 import "@components/router/main.js";
 
-/*import {CoreModule} from "@jamilservices/sb-core-module";
-import {layoutStruct} from "@components/render/layout/main.js";
+const getColorPreference = () => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
+};
+if(getColorPreference() === 'dark') document.documentElement.classList.add("dark");
 
-document.addEventListener("DOMContentLoaded", function() {
-    CoreModule.createFromStruct({
-        parent: window.document.body,
-        struct: layoutStruct
-    });
-})*/
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    const colorScheme = event.matches ? "dark" : "light";
+    if(colorScheme === 'dark') {
+        document.documentElement.classList.add("dark");
+    } else document.documentElement.classList.remove("dark");
+});
