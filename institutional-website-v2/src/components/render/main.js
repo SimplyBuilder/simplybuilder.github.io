@@ -64,6 +64,11 @@ storeEvents.subscribe({
     }
 });
 
+const changeTheme = () => {
+    document.documentElement.classList.toggle("dark");
+};
+
 CoreModule.eventRegister("flag-change.language", changeFlag);
+CoreModule.eventRegister("selector-change.theme", changeTheme);
 
 export default Object.freeze({});
