@@ -60,41 +60,45 @@ const struct = () => {
                 css: "block text-md font-sans py-2"
             }),
             codeBlock({
-                type: "yaml",
+                type: "javascript",
+                code: "import { [module] } from '[cdn url]'"
+            }),
+            codeBlock({
+                type: "text",
                 code: "https://cdn.skypack.dev/@jamilservices/sb-core-module@latest/lib/main.min.js"
             }),
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://cdn.jsdelivr.net/npm/@jamilservices/sb-core-module@latest/lib/main.min.js"
             }),
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://unpkg.com/@jamilservices/sb-core-module@latest/lib/main.min.js"
             }),
 
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://cdn.skypack.dev/@jamilservices/sb-core-event-module@latest/lib/main.min.js"
             }),
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://cdn.jsdelivr.net/npm/@jamilservices/sb-core-event-module@latest/lib/main.min.js"
             }),
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://unpkg.com/@jamilservices/sb-core-event-module@latest/lib/main.min.js"
             }),
 
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://cdn.skypack.dev/@jamilservices/sb-core-dom-module@latest/lib/main.min.js"
             }),
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://cdn.jsdelivr.net/npm/@jamilservices/sb-core-dom-module@latest/lib/main.min.js"
             }),
             codeBlock({
-                type: "yaml",
+                type: "text",
                 code: "https://unpkg.com/@jamilservices/sb-core-dom-module@latest/lib/main.min.js"
             })
         ]

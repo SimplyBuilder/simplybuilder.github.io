@@ -8,7 +8,7 @@ const struct = () => {
     return {
         element: "footer",
         attr: {
-            class: "inline-flex flex-col flex-wrap w-full items-center justify-center py-6 px-4 font-mono"
+            class: "inline-flex flex-col flex-wrap w-full items-center justify-center py-6 px-4 font-mono border-t border-blue-600"
         },
         children: [
             {
