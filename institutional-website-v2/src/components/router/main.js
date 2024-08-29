@@ -36,6 +36,6 @@ routers.register({
 routers.register({
     id: "404",
     title: title_default +" Oops"
-})
+});
 
 export default Object.freeze({});
