@@ -1,0 +1,12 @@
+/* titulo com fonte display + peso 600 + tracking */
+%display-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* texto secundario apagado com line-height confortavel */
+%muted-text {
+  color: var(--foreground-dimmer);
+  line-height: 1.6;
+}

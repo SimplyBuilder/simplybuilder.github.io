@@ -1,0 +1,108 @@
+{
+  "lang": "en-US",
+  "label": "English",
+  "seo": {
+    "home": {
+      "title": "SimplyBuilder \u2013 Build UI with JSON Objects",
+      "desc": "Describe your UI as a SimplyBuilder Object (plain JS) and the runtime renders it as real DOM. Via CDN or npm, zero dependencies, MIT license."
+    }
+  },
+  "header": { "home": "Home", "docs": "Docs", "playground": "Playground", "github": "GitHub", "getstarted": "Get started" },
+  "hero": {
+    "title": "Build with<br>SimplyBuilder Objects",
+    "desc": "Describe your UI as a SimplyBuilder Object \u2014 the runtime renders it instantly. Use via CDN, npm install, or Vite \u2014 no framework lock-in.",
+    "cta1": "Try the playground",
+    "cta2": "Read the docs",
+    "stat1v": "0", "stat1l": "Zero dependencies",
+    "stat2v": "MIT", "stat2l": "Open source",
+    "stat3v": "SB", "stat3l": "SBObject"
+  },
+  "trusted": "Built with SimplyBuilder",
+  "logos": ["ElementStruct", "SimplyBuilder Object", "CDN + npm", "No Build"],
+  "features": {
+    "title": "Why SimplyBuilder?",
+    "desc": "A lightweight, declarative way to build UI components and pages using SimplyBuilder Objects.",
+    "cards": [
+      { "t": "Generate from text", "d": "Describe your interface in natural language or paste HTML \u2014 AI agents use SimplyBuilder skills to produce the Struct for you." },
+      { "t": "CDN-powered rendering", "d": "Import CoreModule from any CDN or install via npm \u2014 works with Vite, Webpack, or any bundler. Zero config either way." },
+      { "t": "ElementStruct schema", "d": "A powerful schema for SimplyBuilder Objects describing any DOM tree: element, type, attr, attrNS, dataset, children, text, html, shadow, and events." },
+      { "t": "AI-ready specs", "d": "SimplyBuilder provides skills and specs so AI agents can generate Structs from natural language, HTML, or URLs. You describe, AI builds." },
+      { "t": "Validated Objects", "d": "Every SimplyBuilder Object is validated against the ElementStruct schema before rendering." },
+      { "t": "Open source", "d": "MIT-licensed. Contribute on GitHub, report issues, and help shape the future of declarative UI with SimplyBuilder." }
+    ]
+  },
+  "demo": {
+    "title": "Object in, UI out",
+    "desc": "Write a SimplyBuilder Object describing your UI \u2014 plain JS, no templates, no JSX. The runtime renders it as real DOM instantly.",
+    "btn": "Try in playground"
+  },
+  "cta": {
+    "title": "Start building with SimplyBuilder Objects",
+    "desc": "Import via CDN or npm install \u2014 render your first Struct in under a minute.",
+    "btn": "Get started"
+  },
+  "pages": {
+    "docs": {
+      "title": "Documentation",
+      "desc": "Learn how SimplyBuilder Objects work. The entire UI is described as a Struct \u2014 a plain JS object that maps directly to DOM.",
+      "back": "Back to home",
+      "packages_title": "Package Documentation",
+      "packages_desc": "Each module ships with its own README covering installation, usage, and the full API. Open the one you need:",
+      "packages": {
+        "core_desc": "Unified entry point. Imports and wires the DOM and Event modules together \u2014 element store, struct rendering, event actions.",
+        "dom_desc": "Element creation and DOM manipulation. Build HTML and SVG trees from structs, register them in the element store, and clean them up.",
+        "event_desc": "Declarative event management. Register named actions, bind them through the event property, and free listeners on removal.",
+        "read_link": "Read the README"
+      },
+      "schema_title": "ElementStruct schema",
+      "schema_text": "Each node supports: element, type, attr, attrNS, dataset, text, html, shadow, event, and children.",
+      "schema_props_title": "Properties Reference",
+      "schema_props_desc": "Each node in a SimplyBuilder Object can use the following properties:",
+      "props": {
+        "struct_label": "Struct:",
+        "rendered_label": "Rendered:",
+        "element_d": "The HTML tag name. This is the only required property. Examples: div, button, section, h1, p, ul, li.",
+        "attr_d": "Key-value pairs of standard HTML attributes. Used for class, id, href, style, and more.",
+        "text_d": "Sets the element's textContent. Plain text only \u2014 no HTML parsing.",
+        "html_d": "Sets the element's innerHTML. Use for rich content with HTML tags.",
+        "dataset_d": "Key-value pairs for data-* attributes. A special state key auto-registers the element in the store for later retrieval.",
+        "children_d": "Array of child ElementStruct objects. Builds the DOM tree recursively.",
+        "svg_d": "Set type to 'svg' and use attrNS for SVG namespace attributes. Enables inline SVG rendering.",
+        "shadow_d": "Creates a Shadow Root on the element. Accepts a string ('open'|'closed') or an object with mode and optional styles.",
+        "shadow_content": "In shadow",
+        "event_d": "Binds a DOM event to a registered action. Requires type (event name) and action (registered handler name)."
+      },
+      "examples_title": "Live Examples",
+      "examples_desc": "Interactive demos showing SimplyBuilder Objects in action.",
+      "examples": {
+        "svg_title": "SVG Rendering",
+        "svg_desc": "SVG elements are created using type: 'svg' and attrNS for namespaced attributes. Click the button to cycle the circle color.",
+        "svg_btn": "Change Color",
+        "shadow_title": "Shadow DOM",
+        "shadow_desc": "Use the shadow property to create encapsulated Shadow DOM. Try it in the playground:",
+        "shadow_btn": "Open Shadow DOM Example",
+        "event_title": "Event Binding",
+        "event_desc": "Declarative events via the event property. Each button uses a registered action connected through the ElementStruct.",
+        "alert_btn": "Show Alert",
+        "counter_btn": "Count",
+        "toggle_btn": "Toggle"
+      }
+    },
+    "playground": {
+      "title": "Playground",
+      "desc": "Try SimplyBuilder Objects in real time. Write a Struct and see it rendered instantly.",
+      "back": "Back to home",
+      "editor_hint": "Write your SimplyBuilder Object here...",
+      "btn_run": "Render",
+      "output_label": "Output"
+    }
+  },
+  "footer": {
+    "brand": "Build with SimplyBuilder Objects. Zero config, zero deps, any environment.",
+    "product": "Product", "resources": "Resources",
+    "p1": "Playground", "p2": "Documentation",
+    "r3": "GitHub", "r4": "YouTube",
+    "copyright": "\u00A9 2024 SimplyBuilder \u2014 MIT License",
+    "license": "License"
+  }
+}

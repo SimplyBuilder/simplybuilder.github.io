@@ -1,0 +1,74 @@
+[
+  {
+    "element": "section",
+    "attr": { "class": "hero" },
+    "children": [{
+      "element": "div",
+      "attr": { "class": "container" },
+      "children": [
+        { "element": "h1", "attr": { "class": "hero__title" }, "dataset": { "state": "playTitle" }, "text": "$t:pages.playground.title" },
+        { "element": "p", "attr": { "class": "hero__desc" }, "dataset": { "state": "playDesc" }, "text": "$t:pages.playground.desc" },
+        {
+          "element": "div",
+          "attr": { "class": "hero__actions" },
+          "children": [
+            { "element": "a", "attr": { "class": "btn btn--ghost btn--large", "href": "#/home" }, "text": "$t:pages.playground.back" }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "element": "section",
+    "attr": { "class": "section" },
+    "children": [{
+      "element": "div",
+      "attr": { "class": "container" },
+      "children": [
+        {
+          "element": "div",
+          "attr": { "class": "code-demo__editor", "style": "margin-bottom:24px" },
+          "children": [
+            {
+              "element": "div",
+              "attr": { "class": "code-demo__editor-header" },
+              "children": [
+                { "element": "span", "dataset": { "state": "playEditorHint" }, "text": "$t:pages.playground.editor_hint", "attr": { "style": "font-size:13px;color:var(--foreground-dimmest)" } }
+              ]
+            },
+            {
+              "element": "textarea",
+              "attr": { "class": "code-demo__editor-body", "style": "min-height:200px;width:100%;border:none;resize:vertical;font-family:monospace;padding:16px;background:transparent;color:inherit", "spellcheck": "false", "placeholder": "Write your SimplyBuilder Object here..." },
+              "dataset": { "state": "playEditor" },
+              "text": "{\"element\":\"div\",\"attr\":{\"class\":\"uk-container uk-background-secondary uk-padding\"},\"children\":[{\"element\":\"h1\",\"attr\":{\"class\":\"uk-text-primary\"},\"text\":\"Hello, SimplyBuilder!\"},{\"element\":\"p\",\"attr\":{\"class\":\"uk-text-lead uk-text-warning\"},\"text\":\"Try editing this JSON and click Render\"}]}"
+            }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "style": "display:flex;gap:12px;margin-bottom:12px;align-items:center;flex-wrap:wrap" },
+          "children": [
+            {
+              "element": "input",
+              "attr": { "type": "text", "class": "play-css-input", "placeholder": "CSS URL (opcional)", "value": "https://cdn.jsdelivr.net/npm/uikit@3.25.20/dist/css/uikit.min.css", "style": "flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--outline-dimmest);border-radius:6px;background:transparent;color:inherit;font-family:monospace;font-size:13px" },
+              "dataset": { "state": "playCssInput" }
+            },
+            { "element": "button", "attr": { "class": "btn btn--primary" }, "dataset": { "state": "playBtnRun" }, "event": { "type": "click", "action": "playRun" }, "text": "$t:pages.playground.btn_run" }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "class": "section__header" },
+          "children": [
+            { "element": "h2", "attr": { "class": "section__title" }, "dataset": { "state": "playOutputLabel" }, "text": "$t:pages.playground.output_label" }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "class": "play-output", "style": "border:1px solid var(--outline-dimmest);border-radius:8px;padding:16px;min-height:100px" },
+          "dataset": { "state": "playOutput" }
+        }
+      ]
+    }]
+  }
+]

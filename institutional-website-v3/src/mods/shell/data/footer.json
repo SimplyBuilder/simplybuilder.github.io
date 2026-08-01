@@ -1,0 +1,157 @@
+{
+  "element": "footer",
+  "attr": {
+    "class": "footer"
+  },
+  "children": [
+    {
+      "element": "div",
+      "attr": {
+        "class": "container"
+      },
+      "children": [
+        {
+          "element": "div",
+          "attr": {
+            "class": "footer__grid"
+          },
+          "children": [
+            {
+              "element": "div",
+              "children": [
+                {
+                  "element": "img",
+                  "attr": {
+                    "class": "logo-img",
+                    "src": "/assets/img/logo.png"
+                  }
+                },
+                {
+                  "element": "p",
+                  "attr": {
+                    "class": "footer__brand-desc"
+                  },
+                  "dataset": {
+                    "state": "footerBrand"
+                  },
+                  "text": "$t:footer.brand"
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "children": [
+                {
+                  "element": "div",
+                  "attr": {
+                    "class": "footer__column-title"
+                  },
+                  "dataset": {
+                    "state": "footerProduct"
+                  },
+                  "text": "$t:footer.product"
+                },
+                {
+                  "element": "a",
+                  "attr": {
+                    "class": "footer__link",
+                    "href": "#/playground"
+                  },
+                  "dataset": {
+                    "state": "footerP1"
+                  },
+                  "text": "$t:footer.p1"
+                },
+                {
+                  "element": "a",
+                  "attr": {
+                    "class": "footer__link",
+                    "href": "#/docs"
+                  },
+                  "dataset": {
+                    "state": "footerP2"
+                  },
+                  "text": "$t:footer.p2"
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "children": [
+                {
+                  "element": "div",
+                  "attr": {
+                    "class": "footer__column-title"
+                  },
+                  "dataset": {
+                    "state": "footerResources"
+                  },
+                  "text": "$t:footer.resources"
+                },
+                {
+                  "element": "a",
+                  "attr": {
+                    "class": "footer__link",
+                    "href": "https://github.com/simplybuilder"
+                  },
+                  "dataset": {
+                    "state": "footerR3"
+                  },
+                  "text": "$t:footer.r3"
+                },
+                {
+                  "element": "a",
+                  "attr": {
+                    "class": "footer__link",
+                    "href": "https://youtube.com/@simplybuilder",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer"
+                  },
+                  "dataset": {
+                    "state": "footerR4"
+                  },
+                  "text": "$t:footer.r4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": {
+            "class": "footer__bottom"
+          },
+          "children": [
+            {
+              "element": "span",
+              "dataset": {
+                "state": "footerCopyright"
+              },
+              "text": "$t:footer.copyright"
+            },
+            {
+              "element": "div",
+              "attr": {
+                "style": "display:flex;gap:24px;"
+              },
+              "children": [
+                {
+                  "element": "a",
+                  "attr": {
+                    "class": "footer__link",
+                    "href": "https://github.com/simplybuilder/sb-core-v2/blob/main/LICENSE",
+                    "style": "margin:0;"
+                  },
+                  "dataset": {
+                    "state": "footerLicense"
+                  },
+                  "text": "$t:footer.license"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

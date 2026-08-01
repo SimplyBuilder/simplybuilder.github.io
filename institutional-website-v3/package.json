@@ -1,0 +1,40 @@
+{
+  "name": "simplybuilder-refactor",
+  "version": "0.3.0",
+  "description": "SimplyBuilder - Official Site",
+  "private": true,
+  "type": "module",
+  "homepage": "https://simplybuilder.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimplyBuilder/simplybuilder.github.io.git"
+  },
+  "author": "Jamil Services <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "funding": [
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/juliojamil"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/jamilservicos"
+    }
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@simplybuilder/core": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "glob": "^13.0.6",
+    "postcss": "^8.5.19",
+    "postcss-nested": "^7.0.2",
+    "sass": "^1.101.0",
+    "terser": "^5.49.0",
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,726 @@
+[
+  {
+    "element": "section",
+    "attr": {
+      "class": "hero"
+    },
+    "children": [
+      {
+        "element": "div",
+        "attr": {
+          "class": "container"
+        },
+        "children": [
+
+          {
+            "element": "h1",
+            "attr": {
+              "class": "hero__title"
+            },
+            "dataset": {
+              "state": "heroTitle"
+            },
+            "html": "$th:hero.title"
+          },
+          {
+            "element": "p",
+            "attr": {
+              "class": "hero__desc"
+            },
+            "dataset": {
+              "state": "heroDesc"
+            },
+            "text": "$t:hero.desc"
+          },
+          {
+            "element": "div",
+            "attr": {
+              "class": "hero__actions"
+            },
+            "children": [
+              {
+                "element": "button",
+                "attr": {
+                  "class": "btn btn--primary btn--large"
+                },
+                "dataset": {
+                  "state": "heroCta1"
+                },
+                "event": {
+                  "type": "click",
+                  "action": "btnPrimary"
+                },
+                "text": "$t:hero.cta1"
+              },
+              {
+                "element": "button",
+                "attr": {
+                  "class": "btn btn--ghost btn--large"
+                },
+                "event": {
+                  "type": "click",
+                  "action": "heroCta2"
+                },
+                "children": [
+                  {
+                    "element": "svg",
+                    "type": "svg",
+                    "attrNS": {
+                      "width": "16",
+                      "height": "16",
+                      "viewBox": "0 0 24 24",
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-width": "2"
+                    },
+                    "children": [
+                      {
+                        "element": "polygon",
+                        "type": "svg",
+                        "attrNS": {
+                          "points": "5 3 19 12 5 21 5 3"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "element": "span",
+                    "dataset": {
+                      "state": "heroCta2"
+                    },
+                    "text": "$t:hero.cta2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "element": "div",
+            "attr": {
+              "class": "hero__stats"
+            },
+            "children": [
+              {
+                "element": "div",
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "hero__stat-value"
+                    },
+                    "dataset": {
+                      "state": "heroStat1v"
+                    },
+                    "text": "$t:hero.stat1v"
+                  },
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "hero__stat-label"
+                    },
+                    "dataset": {
+                      "state": "heroStat1l"
+                    },
+                    "text": "$t:hero.stat1l"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "hero__stat-value"
+                    },
+                    "dataset": {
+                      "state": "heroStat2v"
+                    },
+                    "text": "$t:hero.stat2v"
+                  },
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "hero__stat-label"
+                    },
+                    "dataset": {
+                      "state": "heroStat2l"
+                    },
+                    "text": "$t:hero.stat2l"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "hero__stat-value"
+                    },
+                    "dataset": {
+                      "state": "heroStat3v"
+                    },
+                    "text": "$t:hero.stat3v"
+                  },
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "hero__stat-label"
+                    },
+                    "dataset": {
+                      "state": "heroStat3l"
+                    },
+                    "text": "$t:hero.stat3l"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "element": "section",
+    "attr": {
+      "class": "trusted"
+    },
+    "children": [
+      {
+        "element": "div",
+        "attr": {
+          "class": "container"
+        },
+        "children": [
+          {
+            "element": "div",
+            "attr": {
+              "class": "trusted__label"
+            },
+            "dataset": {
+              "state": "trustedLabel"
+            },
+            "text": "$t:trusted"
+          },
+          {
+            "element": "div",
+            "attr": {
+              "class": "trusted__logos"
+            },
+            "children": [
+              {
+                "element": "svg",
+                "type": "svg",
+                "attrNS": {
+                  "viewBox": "0 0 200 50",
+                  "fill": "currentColor"
+                },
+                "children": [
+                  {
+                    "element": "text",
+                    "type": "svg",
+                    "attrNS": {
+                      "x": "0",
+                      "y": "35",
+                      "font-size": "24",
+                      "font-weight": "600",
+                      "font-family": "sans-serif"
+                    },
+                    "dataset": {
+                      "state": "logo0"
+                    },
+                    "text": "$t:logos.0"
+                  }
+                ]
+              },
+              {
+                "element": "svg",
+                "type": "svg",
+                "attrNS": {
+                  "viewBox": "0 0 200 50",
+                  "fill": "currentColor"
+                },
+                "children": [
+                  {
+                    "element": "text",
+                    "type": "svg",
+                    "attrNS": {
+                      "x": "0",
+                      "y": "35",
+                      "font-size": "24",
+                      "font-weight": "600",
+                      "font-family": "sans-serif"
+                    },
+                    "dataset": {
+                      "state": "logo1"
+                    },
+                    "text": "$t:logos.1"
+                  }
+                ]
+              },
+              {
+                "element": "svg",
+                "type": "svg",
+                "attrNS": {
+                  "viewBox": "0 0 200 50",
+                  "fill": "currentColor"
+                },
+                "children": [
+                  {
+                    "element": "text",
+                    "type": "svg",
+                    "attrNS": {
+                      "x": "0",
+                      "y": "35",
+                      "font-size": "24",
+                      "font-weight": "600",
+                      "font-family": "sans-serif"
+                    },
+                    "dataset": {
+                      "state": "logo2"
+                    },
+                    "text": "$t:logos.2"
+                  }
+                ]
+              },
+              {
+                "element": "svg",
+                "type": "svg",
+                "attrNS": {
+                  "viewBox": "0 0 200 50",
+                  "fill": "currentColor"
+                },
+                "children": [
+                  {
+                    "element": "text",
+                    "type": "svg",
+                    "attrNS": {
+                      "x": "0",
+                      "y": "35",
+                      "font-size": "24",
+                      "font-weight": "600",
+                      "font-family": "sans-serif"
+                    },
+                    "dataset": {
+                      "state": "logo3"
+                    },
+                    "text": "$t:logos.3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "element": "section",
+    "attr": {
+      "class": "section"
+    },
+    "children": [
+      {
+        "element": "div",
+        "attr": {
+          "class": "container"
+        },
+        "children": [
+          {
+            "element": "div",
+            "attr": {
+              "class": "section__header"
+            },
+            "children": [
+              {
+                "element": "h2",
+                "attr": {
+                  "class": "section__title"
+                },
+                "dataset": {
+                  "state": "featuresTitle"
+                },
+                "text": "$t:features.title"
+              },
+              {
+                "element": "p",
+                "attr": {
+                  "class": "section__desc"
+                },
+                "dataset": {
+                  "state": "featuresDesc"
+                },
+                "text": "$t:features.desc"
+              }
+            ]
+          },
+          {
+            "element": "div",
+            "attr": {
+              "class": "section__grid"
+            },
+            "children": [
+              {
+                "element": "div",
+                "attr": {
+                  "class": "feature-card"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "feature-card__icon"
+                    },
+                    "html": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg>"
+                  },
+                  {
+                    "element": "h3",
+                    "attr": {
+                      "class": "feature-card__title"
+                    },
+                    "dataset": {
+                      "state": "fc0T"
+                    },
+                    "text": "$t:features.cards.0.t"
+                  },
+                  {
+                    "element": "p",
+                    "attr": {
+                      "class": "feature-card__desc"
+                    },
+                    "dataset": {
+                      "state": "fc0D"
+                    },
+                    "text": "$t:features.cards.0.d"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "attr": {
+                  "class": "feature-card"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "feature-card__icon"
+                    },
+                    "html": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg>"
+                  },
+                  {
+                    "element": "h3",
+                    "attr": {
+                      "class": "feature-card__title"
+                    },
+                    "dataset": {
+                      "state": "fc1T"
+                    },
+                    "text": "$t:features.cards.1.t"
+                  },
+                  {
+                    "element": "p",
+                    "attr": {
+                      "class": "feature-card__desc"
+                    },
+                    "dataset": {
+                      "state": "fc1D"
+                    },
+                    "text": "$t:features.cards.1.d"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "attr": {
+                  "class": "feature-card"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "feature-card__icon"
+                    },
+                    "html": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg>"
+                  },
+                  {
+                    "element": "h3",
+                    "attr": {
+                      "class": "feature-card__title"
+                    },
+                    "dataset": {
+                      "state": "fc2T"
+                    },
+                    "text": "$t:features.cards.2.t"
+                  },
+                  {
+                    "element": "p",
+                    "attr": {
+                      "class": "feature-card__desc"
+                    },
+                    "dataset": {
+                      "state": "fc2D"
+                    },
+                    "text": "$t:features.cards.2.d"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "attr": {
+                  "class": "feature-card"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "feature-card__icon"
+                    },
+                    "html": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg>"
+                  },
+                  {
+                    "element": "h3",
+                    "attr": {
+                      "class": "feature-card__title"
+                    },
+                    "dataset": {
+                      "state": "fc3T"
+                    },
+                    "text": "$t:features.cards.3.t"
+                  },
+                  {
+                    "element": "p",
+                    "attr": {
+                      "class": "feature-card__desc"
+                    },
+                    "dataset": {
+                      "state": "fc3D"
+                    },
+                    "text": "$t:features.cards.3.d"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "attr": {
+                  "class": "feature-card"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "feature-card__icon"
+                    },
+                    "html": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg>"
+                  },
+                  {
+                    "element": "h3",
+                    "attr": {
+                      "class": "feature-card__title"
+                    },
+                    "dataset": {
+                      "state": "fc4T"
+                    },
+                    "text": "$t:features.cards.4.t"
+                  },
+                  {
+                    "element": "p",
+                    "attr": {
+                      "class": "feature-card__desc"
+                    },
+                    "dataset": {
+                      "state": "fc4D"
+                    },
+                    "text": "$t:features.cards.4.d"
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "attr": {
+                  "class": "feature-card"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "feature-card__icon"
+                    },
+                    "html": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/></svg>"
+                  },
+                  {
+                    "element": "h3",
+                    "attr": {
+                      "class": "feature-card__title"
+                    },
+                    "dataset": {
+                      "state": "fc5T"
+                    },
+                    "text": "$t:features.cards.5.t"
+                  },
+                  {
+                    "element": "p",
+                    "attr": {
+                      "class": "feature-card__desc"
+                    },
+                    "dataset": {
+                      "state": "fc5D"
+                    },
+                    "text": "$t:features.cards.5.d"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "element": "section",
+    "attr": {
+      "class": "code-demo"
+    },
+    "children": [
+      {
+        "element": "div",
+        "attr": {
+          "class": "container code-demo__container"
+        },
+        "children": [
+          {
+            "element": "div",
+            "children": [
+              {
+                "element": "h2",
+                "attr": {
+                  "class": "code-demo__title"
+                },
+                "dataset": {
+                  "state": "demoTitle"
+                },
+                "text": "$t:demo.title"
+              },
+              {
+                "element": "p",
+                "attr": {
+                  "class": "code-demo__desc"
+                },
+                "dataset": {
+                  "state": "demoDesc"
+                },
+                "text": "$t:demo.desc"
+              },
+              {
+                "element": "button",
+                "attr": {
+                  "class": "btn btn--primary"
+                },
+                "dataset": {
+                  "state": "demoBtn"
+                },
+                "event": {
+                  "type": "click",
+                  "action": "btnPrimary"
+                },
+                "text": "$t:demo.btn"
+              }
+            ]
+          },
+          {
+            "element": "div",
+            "attr": {
+              "class": "code-demo__editor"
+            },
+            "children": [
+              {
+                "element": "div",
+                "attr": {
+                  "class": "code-demo__editor-header"
+                },
+                "children": [
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "code-demo__editor-dot"
+                    }
+                  },
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "code-demo__editor-dot"
+                    }
+                  },
+                  {
+                    "element": "div",
+                    "attr": {
+                      "class": "code-demo__editor-dot"
+                    }
+                  }
+                ]
+              },
+              {
+                "element": "div",
+                "attr": {
+                  "class": "code-demo__editor-body"
+                },
+                "html": "<span class=\"comment\">// ElementStruct example</span><br>{<br>  <span class=\"string\">\"element\"</span>: <span class=\"string\">\"div\"</span>,<br>  <span class=\"string\">\"attr\"</span>: { <span class=\"string\">\"class\"</span>: <span class=\"string\">\"container\"</span> },<br>  <span class=\"string\">\"children\"</span>: [<br>    {<br>      <span class=\"string\">\"element\"</span>: <span class=\"string\">\"h1\"</span>,<br>      <span class=\"string\">\"text\"</span>: <span class=\"string\">\"Hello, SimplyBuilder!\"</span><br>    },<br>    {<br>      <span class=\"string\">\"element\"</span>: <span class=\"string\">\"button\"</span>,<br>      <span class=\"string\">\"attr\"</span>: { <span class=\"string\">\"class\"</span>: <span class=\"string\">\"btn\"</span> },<br>      <span class=\"string\">\"text\"</span>: <span class=\"string\">\"Click me\"</span>,<br>      <span class=\"string\">\"event\"</span>: {<br>        <span class=\"string\">\"type\"</span>: <span class=\"string\">\"click\"</span>,<br>        <span class=\"string\">\"action\"</span>: <span class=\"string\">\"alert('Hi!')\"</span><br>      }<br>    }<br>  ]<br>}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "element": "section",
+    "attr": {
+      "class": "cta"
+    },
+    "children": [
+      {
+        "element": "div",
+        "attr": {
+          "class": "container"
+        },
+        "children": [
+          {
+            "element": "h2",
+            "attr": {
+              "class": "cta__title"
+            },
+            "dataset": {
+              "state": "ctaTitle"
+            },
+            "text": "$t:cta.title"
+          },
+          {
+            "element": "p",
+            "attr": {
+              "class": "cta__desc"
+            },
+            "dataset": {
+              "state": "ctaDesc"
+            },
+            "text": "$t:cta.desc"
+          },
+          {
+            "element": "button",
+            "attr": {
+              "class": "btn btn--primary btn--large"
+            },
+            "dataset": {
+              "state": "ctaBtn"
+            },
+            "event": {
+              "type": "click",
+              "action": "btnPrimary"
+            },
+            "text": "$t:cta.btn"
+          }
+        ]
+      }
+    ]
+  }
+]

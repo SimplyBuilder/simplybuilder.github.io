@@ -1,0 +1,108 @@
+{
+  "lang": "pt-BR",
+  "label": "Portugu\u00EAs",
+  "seo": {
+    "home": {
+      "title": "SimplyBuilder \u2013 Build UI with JSON Objects",
+      "desc": "Descreva sua UI como um SimplyBuilder Object (JS puro) e o runtime renderiza como DOM real. Via CDN ou npm, zero depend\u00EAncias, licen\u00E7a MIT."
+    }
+  },
+  "header": { "home": "Home", "docs": "Docs", "playground": "Playground", "github": "GitHub", "getstarted": "Come\u00E7ar" },
+  "hero": {
+    "title": "Construa com<br>SimplyBuilder Objects",
+    "desc": "Descreva sua UI como um SimplyBuilder Object \u2014 o runtime renderiza instantaneamente. Use via CDN, npm install ou Vite \u2014 sem vendor lock-in.",
+    "cta1": "Experimente o playground",
+    "cta2": "Ler a documenta\u00E7\u00E3o",
+    "stat1v": "0", "stat1l": "Zero depend\u00EAncias",
+    "stat2v": "MIT", "stat2l": "C\u00F3digo aberto",
+    "stat3v": "SB", "stat3l": "SBObject"
+  },
+  "trusted": "Constru\u00EDdo com SimplyBuilder",
+  "logos": ["ElementStruct", "SimplyBuilder Object", "CDN + npm", "Sem Build"],
+  "features": {
+    "title": "Por que SimplyBuilder?",
+    "desc": "Um jeito leve e declarativo de construir componentes e p\u00E1ginas UI usando SimplyBuilder Objects.",
+    "cards": [
+      { "t": "Gere a partir de texto", "d": "Descreva sua interface em linguagem natural ou cole HTML \u2014 agentes de IA usam skills SimplyBuilder para produzir o Struct para voc\u00EA." },
+      { "t": "Renderiza\u00E7\u00E3o via CDN ou npm", "d": "Importe o CoreModule de qualquer CDN ou instale via npm \u2014 funciona com Vite, Webpack ou qualquer bundler. Zero config de qualquer jeito." },
+      { "t": "Schema ElementStruct", "d": "Um schema poderoso para SimplyBuilder Objects que descreve qualquer \u00E1rvore DOM: element, type, attr, attrNS, dataset, children, text, html, shadow e events." },
+      { "t": "Especifica\u00E7\u00F5es prontas para IA", "d": "SimplyBuilder fornece skills e especifica\u00E7\u00F5es para agentes de IA gerarem Structs a partir de linguagem natural, HTML ou URLs. Voc\u00EA descreve, a IA constr\u00F3i." },
+      { "t": "Objetos validados", "d": "Todo SimplyBuilder Object \u00E9 validado contra o schema ElementStruct antes de renderizar." },
+      { "t": "C\u00F3digo aberto", "d": "Licenciado sob MIT. Contribua no GitHub, reporte issues e ajude a moldar o futuro da UI declarativa com SimplyBuilder." }
+    ]
+  },
+  "demo": {
+    "title": "Objeto entra, UI sai",
+    "desc": "Escreva um SimplyBuilder Object descrevendo sua UI \u2014 JS puro, sem templates, sem JSX. O runtime renderiza como DOM real instantaneamente.",
+    "btn": "Testar no playground"
+  },
+  "cta": {
+    "title": "Comece com SimplyBuilder Objects",
+    "desc": "Importe via CDN ou npm install \u2014 renderize seu primeiro Struct em menos de um minuto.",
+    "btn": "Come\u00E7ar"
+  },
+  "pages": {
+    "docs": {
+      "title": "Documenta\u00E7\u00E3o",
+      "desc": "Aprenda como SimplyBuilder Objects funcionam. A UI inteira \u00E9 descrita como um Struct \u2014 um objeto JS puro que mapeia diretamente para o DOM.",
+      "back": "Voltar ao in\u00EDcio",
+      "packages_title": "Documenta\u00E7\u00E3o dos Pacotes",
+      "packages_desc": "Cada m\u00F3dulo acompanha seu pr\u00F3prio README cobrindo instala\u00E7\u00E3o, uso e a API completa. Abra o que precisar:",
+      "packages": {
+        "core_desc": "Ponto de entrada unificado. Importa e conecta os m\u00F3dulos DOM e Event \u2014 store de elementos, renderiza\u00E7\u00E3o de structs e a\u00E7\u00F5es de eventos.",
+        "dom_desc": "Cria\u00E7\u00E3o de elementos e manipula\u00E7\u00E3o de DOM. Constr\u00F3i \u00E1rvores HTML e SVG a partir de structs, registra-as no store e as limpa quando terminar.",
+        "event_desc": "Gerenciamento declarativo de eventos. Registre a\u00E7\u00F5es nomeadas, vincule-as via propriedade event e libere os listeners na remo\u00E7\u00E3o.",
+        "read_link": "Ler o README"
+      },
+      "schema_title": "Schema ElementStruct",
+      "schema_text": "Cada n\u00F3 suporta: element, type, attr, attrNS, dataset, text, html, shadow, event e children.",
+      "schema_props_title": "Refer\u00EAncia de Propriedades",
+      "schema_props_desc": "Cada n\u00F3 em um SimplyBuilder Object pode usar as seguintes propriedades:",
+      "props": {
+        "struct_label": "Estrutura:",
+        "rendered_label": "Renderizado:",
+        "element_d": "O nome da tag HTML. Esta \u00E9 a \u00FAnica propriedade obrigat\u00F3ria. Exemplos: div, button, section, h1, p, ul, li.",
+        "attr_d": "Pares chave-valor de atributos HTML padr\u00E3o. Usado para class, id, href, style e mais.",
+        "text_d": "Define o textContent do elemento. Apenas texto simples \u2014 sem interpreta\u00E7\u00E3o HTML.",
+        "html_d": "Define o innerHTML do elemento. Use para conte\u00FAdo rico com tags HTML.",
+        "dataset_d": "Pares chave-valor para atributos data-*. A chave especial state registra automaticamente o elemento no store para acesso posterior.",
+        "children_d": "Array de objetos ElementStruct filhos. Constr\u00F3i a \u00E1rvore DOM recursivamente.",
+        "svg_d": "Defina type como 'svg' e use attrNS para atributos do namespace SVG. Permite renderiza\u00E7\u00E3o SVG inline.",
+        "shadow_d": "Cria uma Shadow Root no elemento. Aceita uma string ('open'|'closed') ou um objeto com mode e styles opcionais.",
+        "shadow_content": "Na shadow",
+        "event_d": "Vincula um evento DOM a uma a\u00E7\u00E3o registrada. Requer type (nome do evento) e action (nome do handler registrado)."
+      },
+      "examples_title": "Exemplos ao Vivo",
+      "examples_desc": "Demonstra\u00E7\u00F5es interativas mostrando SimplyBuilder Objects em a\u00E7\u00E3o.",
+      "examples": {
+        "svg_title": "Renderiza\u00E7\u00E3o SVG",
+        "svg_desc": "Elementos SVG s\u00E3o criados usando type: 'svg' e attrNS para atributos do namespace. Clique no bot\u00E3o para mudar a cor do c\u00EDrculo.",
+        "svg_btn": "Mudar Cor",
+        "shadow_title": "Shadow DOM",
+        "shadow_desc": "Use a propriedade shadow para criar Shadow DOM encapsulado. Experimente no playground:",
+        "shadow_btn": "Abrir Exemplo Shadow DOM",
+        "event_title": "Vincula\u00E7\u00E3o de Eventos",
+        "event_desc": "Eventos declarativos via a propriedade event. Cada bot\u00E3o usa uma a\u00E7\u00E3o registrada conectada atrav\u00E9s do ElementStruct.",
+        "alert_btn": "Mostrar Alerta",
+        "counter_btn": "Contar",
+        "toggle_btn": "Alternar"
+      }
+    },
+    "playground": {
+      "title": "Playground",
+      "desc": "Experimente SimplyBuilder Objects em tempo real. Escreva um Struct e veja-o renderizado instantaneamente.",
+      "back": "Voltar ao in\u00EDcio",
+      "editor_hint": "Escreva seu SimplyBuilder Object aqui...",
+      "btn_run": "Renderizar",
+      "output_label": "Sa\u00EDda"
+    }
+  },
+  "footer": {
+    "brand": "Construa com SimplyBuilder Objects. Zero config, zero deps, qualquer ambiente.",
+    "product": "Produto", "resources": "Recursos",
+    "p1": "Playground", "p2": "Documenta\u00E7\u00E3o",
+    "r3": "GitHub", "r4": "YouTube",
+    "copyright": "\u00A9 2024 SimplyBuilder \u2014 Licen\u00E7a MIT",
+    "license": "Licen\u00E7a"
+  }
+}

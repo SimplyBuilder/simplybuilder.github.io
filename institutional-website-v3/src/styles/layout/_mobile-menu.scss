@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.mobile-menu {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 24px 24px;
+  background: var(--background-default);
+  border-bottom: 1px solid var(--outline-dimmest);
+}
+
+.mobile-menu__nav .header__link {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.mobile-menu__nav .header__link--action {
+  margin-top: 8px;
+  padding: 12px 16px;
+  background: var(--accent-primary-default);
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}

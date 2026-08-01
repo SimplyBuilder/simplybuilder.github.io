@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.trusted {
+  padding: 60px 0;
+  border-top: 1px solid var(--outline-dimmest);
+
+  @include respond(md) {
+    padding: 40px 0;
+  }
+}
+
+.trusted__label {
+  @include micro-label();
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.trusted__logos {
+  @include flex(center);
+  gap: 40px;
+  flex-wrap: wrap;
+  opacity: .5;
+}
+
+.trusted__logos svg {
+  height: 24px;
+  width: auto;
+}

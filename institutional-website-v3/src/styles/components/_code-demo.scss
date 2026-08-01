@@ -1,0 +1,76 @@
+@use 'sass:list';
+@use '../abstracts' as *;
+
+$editor-dots: (#ff5f57, #febc2e, #28c840);
+
+.code-demo {
+  padding: 60px 0;
+
+  @include respond(md) {
+    padding: 40px 0;
+  }
+}
+
+.code-demo__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+
+  @include respond(lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.code-demo__title {
+  @extend %display-title;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 16px;
+}
+
+.code-demo__desc {
+  @extend %muted-text;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.code-demo__editor {
+  @include surface($radius: 16px);
+  overflow: hidden;
+}
+
+.code-demo__editor-header {
+  @include flex();
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--background-higher);
+  border-bottom: 1px solid var(--outline-dimmest);
+}
+
+.code-demo__editor-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@for $i from 1 through list.length($editor-dots) {
+  .code-demo__editor-dot:nth-child(#{$i}) {
+    background: list.nth($editor-dots, $i);
+  }
+}
+
+.code-demo__editor-body {
+  padding: 20px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--foreground-dimmer);
+  white-space: pre-wrap;
+
+  .keyword { color: #c792ea; }
+  .string { color: #c3e88d; }
+  .function { color: #82aaff; }
+  .comment { color: #546e7a; }
+  .number { color: #f78c6c; }
+  .variable { color: #eeffff; }
+}

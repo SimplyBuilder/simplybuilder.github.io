@@ -1,16 +1,19 @@
 *
 
-!.gitignore
-!CNAME
-!.github
-!.github/**
-!README.md
-!AUTHORS
-!MAINTAINERS.md
-!institutional-website-v1
-!institutional-website-v2
-!institutional-website-v1/.gitignore
-!institutional-website-v2/.gitignore
+!/.gitignore
+!/.nojekyll
+
+!/CNAME
+!/.github
+!/.github/**
+
+!/README.md
+!/AUTHORS
+!/MAINTAINERS.md
+!/institutional-website-v3
+!/institutional-website-v2
+!/institutional-website-v3/.gitignore
+!/institutional-website-v2/.gitignore
 
 **/*~
 **/*.log

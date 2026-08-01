@@ -1,0 +1,279 @@
+{
+  "element": "header",
+  "attr": {
+    "class": "header",
+    "role": "banner"
+  },
+  "children": [
+    {
+      "element": "div",
+      "attr": {
+        "class": "header__container"
+      },
+      "children": [
+        {
+          "element": "a",
+          "attr": {
+            "class": "header__logo",
+            "href": "#/home",
+            "aria-label": "SimplyBuilder"
+          },
+          "children": [
+            {
+              "element": "img",
+              "attr": {
+                "class": "logo-img",
+                "src": "/assets/img/logo.png"
+              }
+            }
+          ]
+        },
+        {
+          "element": "nav",
+          "attr": {
+            "class": "header__nav"
+          },
+          "children": [
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "#/home"
+              },
+              "dataset": {
+                "state": "navHome"
+              },
+              "text": "$t:header.home"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "#/docs"
+              },
+              "dataset": {
+                "state": "navDocs"
+              },
+              "text": "$t:header.docs"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "#/playground"
+              },
+              "dataset": {
+                "state": "navPlayground"
+              },
+              "text": "$t:header.playground"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "target": "_blank",
+                "href": "https://github.com/SimplyBuilder/sb-core-v2"
+              },
+              "dataset": {
+                "state": "navGithub"
+              },
+              "text": "$t:header.github"
+            }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": {
+            "class": "header__actions"
+          },
+          "children": [
+            {
+              "element": "button",
+              "attr": {
+                "class": "btn btn--ghost btn--lang"
+              },
+              "dataset": {
+                "action": "toggleLang",
+                "state": "langBtn"
+              },
+              "event": {
+                "type": "click",
+                "action": "toggleLang"
+              },
+              "text": "PT"
+            },
+            {
+              "element": "button",
+              "attr": {
+                "class": "btn btn--ghost btn--menu",
+                "aria-label": "Menu"
+              },
+              "dataset": {
+                "action": "toggleMenu",
+                "state": "menuBtn"
+              },
+              "event": {
+                "type": "click",
+                "action": "toggleMenu"
+              },
+              "children": [
+                {
+                  "element": "svg",
+                  "type": "svg",
+                  "attrNS": {
+                    "width": "20",
+                    "height": "20",
+                    "viewBox": "0 0 24 24",
+                    "fill": "none",
+                    "stroke": "currentColor",
+                    "stroke-width": "2"
+                  },
+                  "children": [
+                    {
+                      "element": "line",
+                      "type": "svg",
+                      "attrNS": {
+                        "x1": "3",
+                        "y1": "6",
+                        "x2": "21",
+                        "y2": "6"
+                      }
+                    },
+                    {
+                      "element": "line",
+                      "type": "svg",
+                      "attrNS": {
+                        "x1": "3",
+                        "y1": "12",
+                        "x2": "21",
+                        "y2": "12"
+                      }
+                    },
+                    {
+                      "element": "line",
+                      "type": "svg",
+                      "attrNS": {
+                        "x1": "3",
+                        "y1": "18",
+                        "x2": "21",
+                        "y2": "18"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "button",
+              "attr": {
+                "class": "btn btn--primary header__cta"
+              },
+              "dataset": {
+                "state": "headerGetStarted"
+              },
+              "event": {
+                "type": "click",
+                "action": "btnPrimary"
+              },
+              "text": "$t:header.getstarted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "element": "div",
+      "attr": {
+        "class": "mobile-menu"
+      },
+      "dataset": {
+        "state": "mobileMenu"
+      },
+      "children": [
+        {
+          "element": "nav",
+          "attr": {
+            "class": "mobile-menu__nav"
+          },
+          "children": [
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "#/home"
+              },
+              "dataset": {
+                "state": "mobileNavHome"
+              },
+              "event": {
+                "type": "click",
+                "action": "closeMobileMenu"
+              },
+              "text": "$t:header.home"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "#/docs"
+              },
+              "dataset": {
+                "state": "mobileNavDocs"
+              },
+              "event": {
+                "type": "click",
+                "action": "closeMobileMenu"
+              },
+              "text": "$t:header.docs"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "#/playground"
+              },
+              "dataset": {
+                "state": "mobileNavPlayground"
+              },
+              "event": {
+                "type": "click",
+                "action": "closeMobileMenu"
+              },
+              "text": "$t:header.playground"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link",
+                "href": "https://github.com/simplybuilder"
+              },
+              "dataset": {
+                "state": "mobileNavGithub"
+              },
+              "event": {
+                "type": "click",
+                "action": "closeMobileMenu"
+              },
+              "text": "$t:header.github"
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "header__link header__link--action",
+                "href": "#/playground"
+              },
+              "dataset": {
+                "state": "mobileNavGetStarted"
+              },
+              "event": {
+                "type": "click",
+                "action": "closeMobileMenu"
+              },
+              "text": "$t:header.getstarted"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

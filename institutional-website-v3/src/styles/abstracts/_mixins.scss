@@ -1,0 +1,39 @@
+@use 'sass:map';
+@use 'variables' as v;
+
+/* media query max-width a partir do mapa $breakpoints */
+@mixin respond($bp) {
+  @if map.has-key(v.$breakpoints, $bp) {
+    @media (max-width: map.get(v.$breakpoints, $bp)) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint `#{$bp}` não existe. Opções: #{map.keys(v.$breakpoints)}.";
+  }
+}
+
+/* superficie base: fundo + borda + raio (cards, demos, editors) */
+@mixin surface($bg: var(--background-default), $radius: 12px) {
+  background: $bg;
+  border: 1px solid var(--outline-dimmest);
+  border-radius: $radius;
+}
+
+/* container flex com alinhamento central */
+@mixin flex($justify: null, $align: center) {
+  display: flex;
+  align-items: $align;
+
+  @if $justify {
+    justify-content: $justify;
+  }
+}
+
+/* label uppercase micro (trusted, footer, demos) */
+@mixin micro-label($size: 13px, $color: var(--foreground-dimmest)) {
+  font-size: $size;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: $color;
+}

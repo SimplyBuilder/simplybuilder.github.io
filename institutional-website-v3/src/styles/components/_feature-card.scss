@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.feature-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 32px;
+  @include surface($radius: 16px);
+  transition: border-color .2s, transform .2s;
+
+  &:hover {
+    border-color: var(--outline-default);
+    transform: translateY(-2px);
+  }
+}
+
+.feature-card__icon {
+  @include flex(center);
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--accent-primary-dimmest);
+  margin-bottom: 16px;
+  color: var(--accent-primary-default);
+}
+
+.feature-card__title {
+  @extend %display-title;
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+
+.feature-card__desc {
+  @extend %muted-text;
+  font-size: 14px;
+}
+
+.feature-card__link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-primary-default);
+}

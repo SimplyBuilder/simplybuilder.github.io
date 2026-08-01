@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.cta {
+  padding: 80px 0;
+  text-align: center;
+
+  @include respond(md) {
+    padding: 56px 0;
+  }
+}
+
+.cta__title {
+  @extend %display-title;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+.cta__desc {
+  color: var(--foreground-dimmer);
+  font-size: 1.05rem;
+  max-width: 480px;
+  margin: 0 auto 32px;
+}

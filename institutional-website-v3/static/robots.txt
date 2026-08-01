@@ -1,0 +1,2 @@
+User-Agent: *
+sitemap: https://simplybuilder.github.io/sitemap.xml

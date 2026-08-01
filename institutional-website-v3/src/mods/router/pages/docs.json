@@ -1,0 +1,412 @@
+[
+  {
+    "element": "section",
+    "attr": { "class": "hero" },
+    "children": [{
+      "element": "div",
+      "attr": { "class": "container" },
+      "children": [
+        { "element": "h1", "attr": { "class": "hero__title" }, "dataset": { "state": "docsTitle" }, "text": "$t:pages.docs.title" },
+        { "element": "p", "attr": { "class": "hero__desc" }, "dataset": { "state": "docsDesc" }, "text": "$t:pages.docs.desc" },
+        {
+          "element": "div",
+          "attr": { "class": "hero__actions" },
+          "children": [
+            { "element": "a", "attr": { "class": "btn btn--ghost btn--large", "href": "#/home" }, "text": "$t:pages.docs.back" }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "element": "section",
+    "attr": { "class": "section" },
+    "children": [{
+      "element": "div",
+      "attr": { "class": "container" },
+      "children": [
+        {
+          "element": "div",
+          "attr": { "class": "section__header" },
+          "children": [
+            { "element": "h2", "attr": { "class": "section__title" }, "text": "$t:pages.docs.packages_title" },
+            { "element": "p", "attr": { "class": "section__desc" }, "text": "$t:pages.docs.packages_desc" }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "class": "section__grid" },
+          "children": [
+            {
+              "element": "a",
+              "attr": {
+                "class": "feature-card",
+                "href": "https://github.com/SimplyBuilder/sb-core-v2/blob/main/packages/core/README.md",
+                "target": "_blank",
+                "rel": "noopener"
+              },
+              "children": [
+                { "element": "h3", "attr": { "class": "feature-card__title" }, "text": "@simplybuilder/core" },
+                { "element": "p", "attr": { "class": "feature-card__desc" }, "text": "$t:pages.docs.packages.core_desc" },
+                { "element": "span", "attr": { "class": "feature-card__link" }, "text": "$t:pages.docs.packages.read_link" }
+              ]
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "feature-card",
+                "href": "https://github.com/SimplyBuilder/sb-core-v2/blob/main/packages/dom/README.md",
+                "target": "_blank",
+                "rel": "noopener"
+              },
+              "children": [
+                { "element": "h3", "attr": { "class": "feature-card__title" }, "text": "@simplybuilder/core-dom" },
+                { "element": "p", "attr": { "class": "feature-card__desc" }, "text": "$t:pages.docs.packages.dom_desc" },
+                { "element": "span", "attr": { "class": "feature-card__link" }, "text": "$t:pages.docs.packages.read_link" }
+              ]
+            },
+            {
+              "element": "a",
+              "attr": {
+                "class": "feature-card",
+                "href": "https://github.com/SimplyBuilder/sb-core-v2/blob/main/packages/event/README.md",
+                "target": "_blank",
+                "rel": "noopener"
+              },
+              "children": [
+                { "element": "h3", "attr": { "class": "feature-card__title" }, "text": "@simplybuilder/core-event" },
+                { "element": "p", "attr": { "class": "feature-card__desc" }, "text": "$t:pages.docs.packages.event_desc" },
+                { "element": "span", "attr": { "class": "feature-card__link" }, "text": "$t:pages.docs.packages.read_link" }
+              ]
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "element": "section",
+    "attr": { "class": "section" },
+    "children": [{
+      "element": "div",
+      "attr": { "class": "container" },
+      "children": [
+        {
+          "element": "div",
+          "attr": { "class": "section__header" },
+          "children": [
+            { "element": "h2", "attr": { "class": "section__title" }, "text": "$t:pages.docs.schema_props_title" },
+            { "element": "p", "attr": { "class": "section__desc" }, "text": "$t:pages.docs.schema_props_desc" }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "class": "section__grid" },
+          "children": [
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "element" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.element_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"div\",\n  \"text\": \"I am a <div> element\"\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    { "element": "div", "attr": { "class": "demo-box" }, "text": "I am a <div> element" }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "attr" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.attr_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"button\",\n  \"attr\": {\n    \"class\": \"btn btn--primary\",\n    \"title\": \"Attribute demo\"\n  },\n  \"text\": \"Button with attrs\"\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    { "element": "button", "attr": { "class": "btn btn--primary", "title": "Attribute demo" }, "text": "Button with attrs" }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "text" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.text_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"p\",\n  \"text\": \"Hello, SimplyBuilder!\"\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    { "element": "p", "text": "Hello, SimplyBuilder!" }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "html" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.html_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"div\",\n  \"html\": \"<strong>Bold</strong> and <em>italic</em> text\"\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    { "element": "div", "html": "<strong>Bold</strong> and <em>italic</em> text" }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "dataset" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.dataset_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"div\",\n  \"dataset\": {\n    \"state\": \"demoDataProp\",\n    \"info\": \"example\"\n  },\n  \"text\": \"Check data-state attr\"\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    { "element": "div", "dataset": { "state": "demoDataProp", "info": "example" }, "text": "Check data-state attr" }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "children" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.children_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"ul\",\n  \"children\": [\n    { \"element\": \"li\", \"text\": \"Item 1\" },\n    { \"element\": \"li\", \"text\": \"Item 2\" },\n    { \"element\": \"li\", \"text\": \"Item 3\" }\n  ]\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    {
+                      "element": "ul",
+                      "children": [
+                        { "element": "li", "text": "Item 1" },
+                        { "element": "li", "text": "Item 2" },
+                        { "element": "li", "text": "Item 3" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "type + attrNS" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.svg_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"svg\",\n  \"type\": \"svg\",\n  \"attrNS\": {\n    \"width\": \"80\",\n    \"height\": \"48\",\n    \"viewBox\": \"0 0 80 48\"\n  },\n  \"children\": [\n    {\n      \"element\": \"rect\",\n      \"type\": \"svg\",\n      \"attrNS\": {\n        \"x\": \"8\", \"y\": \"8\",\n        \"width\": \"64\", \"height\": \"32\",\n        \"rx\": \"6\", \"fill\": \"#6c6cf0\"\n      }\n    }\n  ]\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    {
+                      "element": "svg",
+                      "type": "svg",
+                      "attr": { "width": "80", "height": "48" },
+                      "attrNS": { "width": "80", "height": "48", "viewBox": "0 0 80 48" },
+                      "children": [
+                        {
+                          "element": "rect",
+                          "type": "svg",
+                          "attrNS": { "x": "8", "y": "8", "width": "64", "height": "32", "rx": "6", "fill": "#6c6cf0" }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "shadow" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.shadow_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"div\",\n  \"dataset\": { \"state\": \"shadowHost\" },\n  \"shadow\": { \"mode\": \"open\" },\n  \"children\": [\n    { \"element\": \"h1\", \"text\": \"In shadow\" }\n  ]\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    {
+                      "element": "div",
+                      "dataset": { "state": "shadowHost" },
+                      "shadow": { "mode": "open" },
+                      "children": [
+                        { "element": "p", "text": "$t:pages.docs.props.shadow_content" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "prop-card" },
+              "children": [
+                { "element": "h3", "attr": { "class": "prop-card__title" }, "text": "event" },
+                { "element": "p", "attr": { "class": "prop-card__desc" }, "text": "$t:pages.docs.props.event_d" },
+                {
+                  "element": "div",
+                  "attr": { "class": "prop-demo" },
+                  "children": [
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.struct_label" },
+                    { "element": "pre", "attr": { "class": "code-block" }, "text": "{\n  \"element\": \"button\",\n  \"event\": {\n    \"type\": \"click\",\n    \"action\": \"docsDemoAlert\"\n  },\n  \"text\": \"Show Alert\"\n}" },
+                    { "element": "span", "attr": { "class": "prop-demo__label" }, "text": "$t:pages.docs.props.rendered_label" },
+                    {
+                      "element": "button",
+                      "attr": { "class": "btn btn--primary" },
+                      "event": { "type": "click", "action": "docsDemoAlert" },
+                      "text": "$t:pages.docs.examples.alert_btn"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }]
+  },
+  {
+    "element": "section",
+    "attr": { "class": "section" },
+    "children": [{
+      "element": "div",
+      "attr": { "class": "container" },
+      "children": [
+        {
+          "element": "div",
+          "attr": { "class": "section__header" },
+          "children": [
+            { "element": "h2", "attr": { "class": "section__title" }, "text": "$t:pages.docs.examples_title" },
+            { "element": "p", "attr": { "class": "section__desc" }, "text": "$t:pages.docs.examples_desc" }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "class": "demo-section" },
+          "children": [
+            { "element": "h3", "attr": { "class": "demo-section__title" }, "text": "$t:pages.docs.examples.svg_title" },
+            { "element": "p", "attr": { "class": "demo-section__desc" }, "text": "$t:pages.docs.examples.svg_desc" },
+            {
+              "element": "div",
+              "attr": { "class": "demo-section__output" },
+              "children": [
+                {
+                  "element": "svg",
+                  "type": "svg",
+                  "attr": { "width": "120", "height": "120" },
+                  "attrNS": { "width": "120", "height": "120", "viewBox": "0 0 120 120" },
+                  "dataset": { "state": "docsSvgCircle" },
+                  "children": [
+                    {
+                      "element": "circle",
+                      "type": "svg",
+                      "attrNS": { "cx": "60", "cy": "60", "r": "50", "fill": "#6c6cf0" }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "demo-section__actions" },
+              "children": [
+                {
+                  "element": "button",
+                  "attr": { "class": "btn btn--primary" },
+                  "event": { "type": "click", "action": "docsSvgColor" },
+                  "text": "$t:pages.docs.examples.svg_btn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "element": "div",
+          "attr": { "class": "demo-section" },
+          "children": [
+            { "element": "h3", "attr": { "class": "demo-section__title" }, "text": "$t:pages.docs.examples.event_title" },
+            { "element": "p", "attr": { "class": "demo-section__desc" }, "text": "$t:pages.docs.examples.event_desc" },
+            {
+              "element": "div",
+              "attr": { "class": "demo-section__output" },
+              "children": [
+                {
+                  "element": "div",
+                  "attr": { "class": "demo-box" },
+                  "dataset": { "state": "docsToggleContent" },
+                  "text": "This content can be toggled using the button below."
+                },
+                {
+                  "element": "div",
+                  "attr": { "class": "counter-display" },
+                  "dataset": { "state": "docsCounterDisplay" },
+                  "text": "0"
+                }
+              ]
+            },
+            {
+              "element": "div",
+              "attr": { "class": "demo-section__actions" },
+              "children": [
+                {
+                  "element": "button",
+                  "attr": { "class": "btn btn--primary" },
+                  "event": { "type": "click", "action": "docsDemoAlert" },
+                  "text": "$t:pages.docs.examples.alert_btn"
+                },
+                {
+                  "element": "button",
+                  "attr": { "class": "btn btn--ghost" },
+                  "event": { "type": "click", "action": "docsDemoCounter" },
+                  "text": "$t:pages.docs.examples.counter_btn"
+                },
+                {
+                  "element": "button",
+                  "attr": { "class": "btn btn--ghost" },
+                  "event": { "type": "click", "action": "docsDemoToggle" },
+                  "text": "$t:pages.docs.examples.toggle_btn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }]
+  }
+]
